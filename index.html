@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dev Board</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#F4F7FF]">
+    <main>
+        <!-- Header Section  -->
+        <section>
+            <header>
+                <nav>
+                    <div class="flex justify-between bg-white rounded-2xl p-4 mx-[100px] my-6">
+                        <!-- Logo  -->
+                        <div class="flex">
+                            <img src="assets/logo.png" alt="">
+                            <p class="text-[35px]">Dev<span class="font-bold">Board</span></p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex justify-center items-center gap-3 px-4 bg-[#F4F7FF] rounded-4xl">
+                                <img class="w-7 h-7" src="assets/checkbox.png" alt="">
+                                <p class="text-[32px] font-bold">23</p>
+                            </div>
+                            
+                            <div class="bg-[#F4F7FF] rounded-full p-3">
+                                <img src="assets/theme-btn.png" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <!-- Main Body  -->
+        <section class="mx-[100px]">
+            <div class="">
+                 <!-- Left Side  -->
+                 <div class="px-6 bg-white rounded-2xl">
+                    <!-- Top Part  -->
+                     <div class="grid grid-cols-4 gap-6 py-6">
+                        <!-- Task Assigned 1 -->
+                        <div class="bg-[#F4F7FF] flex items-center gap-4 rounded-xl py-3 px-3">
+                            <div class="bg-white rounded-full p-5 flex items-center ">
+                                <img class="" src="assets/checkbox.png" alt="">
+                            </div>
+                            <div class="">
+                                <p>Task Assigned</p>
+                                <p class="text-[32px] font-bold">05</p>
+                            </div>
+                        </div>
+                        <!-- Task Assigned 2 -->
+                        <div class="bg-linear-to-r from-[#3752FD] to-[#9BA8F8] flex items-center gap-4 rounded-xl py-3 px-3 col-span-2">
+                            <div class="p-5 flex items-center">
+                                <img class="" src="assets/board.png" alt="">
+                            </div>
+                            <div class="">
+                                <p class="text-white text-2xl">Discover Something</p>
+                                <p class="text-white text-2xl">New Today!</p>
+                            </div>
+                        </div>
+                        <!-- Task Assigned 3 -->
+                        <div class="bg-[#F4F7FF] flex items-center gap-4 rounded-xl py-3 px-3">
+                            <div class="bg-white rounded-full p-5 flex items-center ">
+                                <img class="" src="assets/checkbox.png" alt="">
+                            </div>
+                            <div class="">
+                                <p>Task Assigned</p>
+                                <p class="text-[32px] font-bold">05</p>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- Cards Section  -->
+                      <div class="">
+                        <!-- All Cards..........  -->
+                        <div class="">
+                            <!-- Card 1 -->
+                            <div class="bg-[#F4F7FF] p-6 rounded-xl">
+                                <p class="bg-white rounded-lg p-2 inline">ShopEase</p>
+                                <h2 class="text-2xl font-medium">Fix Mobile Button Issue </h2>
+                                <p class="bg-white rounded-lg p-2 mt-4">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex justify-between">
+                                    <div class="">
+                                        <p class="text-sm text-slate-500">Deadline</p>
+                                        <p class="text-base font-medium">21 march 2025</p>
+                                    </div>
+                                    <!-- COMPLETED BUTTON 1  -->
+                                    <button id="btn-completed-1" class="bg-[#3752FD] text-base text-white px-4 py-1 rounded-md">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                 </div>
+                 <!-- Right Sidebar  -->
+                 <div class=""></div>
+
+             </div>
+        </section>
+
+    </main>
     
 </body>
 </html>
