@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body class="bg-[#F4F7FF]">
     <main>
@@ -51,8 +52,9 @@
                                 <p class="text-[32px] font-bold">05</p>
                             </div>
                         </div>
-                        <!-- Task Assigned 2 -->
-                        <div class="bg-linear-to-r from-[#3752FD] to-[#9BA8F8] flex items-center gap-4 rounded-xl py-3 px-3 col-span-2">
+                        <!-- Big Button 2 -->
+                        <!-- bg-linear-to-r from-[#3752FD] to-[#9BA8F8] -->
+                        <div id="big-button" class="bg-[#3752FD] hover:bg-[#9BA8F8] flex items-center gap-4 rounded-xl py-3 px-3 col-span-2">
                             <div class="p-5 flex items-center">
                                 <img class="" src="assets/board.png" alt="">
                             </div>
@@ -61,14 +63,13 @@
                                 <p class="text-white text-2xl">New Today!</p>
                             </div>
                         </div>
-                        <!-- Task Assigned 3 -->
+                        <!-- Calender Date 3 -->
                         <div class="bg-[#F4F7FF] flex items-center gap-4 rounded-xl py-3 px-3">
                             <div class="bg-white rounded-full p-5 flex items-center ">
-                                <img class="" src="assets/checkbox.png" alt="">
+                                <img class="" src="assets/calender.png" alt="">
                             </div>
                             <div class="">
-                                <p>Task Assigned</p>
-                                <p class="text-[32px] font-bold">05</p>
+                                <p id="bd-date"></p>
                             </div>
                         </div>
                      </div>
@@ -87,7 +88,7 @@
                                         <p class="text-base font-medium">21 march 2025</p>
                                     </div>
                                     <!-- COMPLETED BUTTON 1  -->
-                                    <button id="btn-completed-1" class="bg-[#3752FD] text-base text-white px-4 py-1 rounded-md">Completed</button>
+                                    <button id="btn-completed-1" class="hover:bg-sky-700 bg-[#3752FD] text-base text-white px-4 py-1 rounded-md">Completed</button>
                                 </div>
                             </div>
                             <!-- Card 222 -->
@@ -171,10 +172,16 @@
                         <p class="text-xl font-medium mb-6">Activity Log</p>
                     </div>
                     <div class="flex justify-center">
-                        <button id="btn-completed-1" class="bg-[#3752FD] text-base text-white px-4 py-1 rounded-md">Completed</button>
+                        <button id="clear-history" class="bg-[#3752FD] hover:bg-sky-700 text-base text-white px-4 py-1 rounded-md">Clear History</button>
 
                     </div>
                     <hr class="my-6 border-slate-300 border-dashed">
+                    <div class="flex justify-center">
+                        <ul id="history">
+                            <li></li>
+                        </ul>
+
+                    </div>
 
                  </div>
 
@@ -182,6 +189,6 @@
         </section>
 
     </main>
-    
+    <script src="index.js"></script>
 </body>
 </html>
