@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Page</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    <h1>All questions here</h1>
+<body class="bg-[#F4F7FF]">
+    <main>
+        <header>
+            <nav>
+                <div class="flex justify-between items-center bg-white rounded-2xl p-4 mx-[100px] my-6">
+                    <!-- Logo  -->
+                    <div class="flex gap-3">
+                        <img src="assets/logo.png" alt="">
+                        <p class="text-[35px]">Dev<span class="font-bold">Board</span></p>
+                    </div>
+                    <div class="">
+                        <button id="back-desk" class="hover:bg-sky-700 bg-[#3752FD] text-base text-white px-4 py-3 rounded-md">Back to Desk</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="mx-[100px] mt-20">
+            <h1 class="text-5xl font-bold mb-7 text-center">Blogs</h1>
+            <div class="bg-white rounded-lg p-4">
+                <h2 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <p class="border-t-1 border-dotted border-slate-300 mt-3 pt-3">
+                    Different ways to select an element in the DOM : <br> 1) document.getElementById 2) document.getElementsByClassName 3) document.getElementsByTagName 4) document.querySelector 5) document.querySelectorAll.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 mt-5">
+                <h2 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+                <p class="border-t-1 border-dotted border-slate-300 mt-3"> innerHTML will take all HTML data inside a div. <br> innerText will take texts from inside an element/tag. <br> textContent wil take text content from a node.
+
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 mt-5">
+                <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+                <p class="border-t-1 border-dotted border-slate-300 mt-3">
+                   Sorry, Not clear about this term properly yet.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 mt-5">
+                <h2 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+                <p class="border-t-1 border-dotted border-slate-300 mt-3">
+                    Event keeps looking for elements in the childs of a node, when number of child is finished it returns to its parent. That returning process is called Event bubbling. 
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-4 mt-5">
+                <h2 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <p class="border-t-1 border-dotted border-slate-300 mt-3">
+                    Create : create.Element; <br> Add : variable.appendChild = ``; <br> Remove : variable.removeElement, variable.innerHTML = ''. 
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <script src="blog.js"></script>
 </body>
 </html>

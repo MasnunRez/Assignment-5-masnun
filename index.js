@@ -3,6 +3,8 @@ document.getElementById("big-button").addEventListener("click", function () {
   window.location.href = "blog-page.html";
 });
 
+
+
 // Completed Button 1
 document
   .getElementById("btn-completed-1")
@@ -17,7 +19,8 @@ document
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleOne = document.getElementById('title-one');
+    list.innerHTML = `<p>You have completed the Task </p>`+ titleOne.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -47,7 +50,8 @@ document
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleTwo = document.getElementById('title-two');
+    list.innerHTML = `<p>You have completed the Task </p>`+ titleTwo.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -76,7 +80,8 @@ document
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleThree = document.getElementById('title-three');
+    list.innerHTML = `<p>You have completed the Task </p>`+ titleThree.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -105,7 +110,8 @@ document
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleFour = document.getElementById('title-four');
+    list.innerHTML = `<p>You have completed the Task </p>` + titleFour.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -134,7 +140,8 @@ document
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleFive = document.getElementById('title-five');
+    list.innerHTML = `<p>You have completed the Task </p>`+ titleFive.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -159,12 +166,14 @@ document
     //   console.log("Button working");
     // Alert show
     alert("Click OK to Complete the Task");
+    alert("All the Task completed");
     // Add history
     const secondList = document.getElementById("history");
     const list = document.createElement("list");
     const getDate = new Date();
     const currentDate = getDate.toLocaleString("en-BD");
-    list.innerHTML = `<p>You have completed the Task on</p>` + currentDate;
+    const titleSix = document.getElementById('title-six');
+    list.innerHTML = `<p>You have completed the Task </p>`+ titleSix.innerText + ' on ' + currentDate;
     secondList.appendChild(list);
     // Minus a number ............
     let number = document.getElementById("task-number");
@@ -178,13 +187,6 @@ document
     number.innerText = calcNumber.toString().padStart(2, "0");
     numberNav.innerText = calcNumber2.toString().padStart(2, "0");
   });
-
-// let bgColors = false
-
-// function colorChange(){
-//     document.body.style.backgroundColor = bgColors ? 'black' : 'red';
-//     bgColors = !bgColors;
-// }
 
 // Change body background
 function colorChange() {
@@ -204,6 +206,8 @@ document.getElementById("clear-history").addEventListener("click", function () {
   const clearAll = document.getElementById("history");
   clearAll.innerHTML = " ";
 });
+
+
 
 const getDate = new Date();
 const currentDate = getDate.toLocaleString("en-BD");
